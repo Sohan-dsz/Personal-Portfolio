@@ -131,7 +131,7 @@ export function Hero() {
             </div>
             <div className="absolute inset-[10px] overflow-hidden rounded-full border border-white/10">
               <Image
-                src="/profile.jpg"
+                src="/profile.png"
                 alt={personal.name}
                 fill
                 priority
