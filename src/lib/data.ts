@@ -35,7 +35,7 @@ export const personal = {
   socials: {
     github: "https://github.com/Sohan-dsz",
     linkedin: "https://www.linkedin.com/in/sohan1919",
-    email: "mailto:sohandsouza15@gmail.com",
+    email: "sohandsouza15@gmail.com",
   },
 };
 

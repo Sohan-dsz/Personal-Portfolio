@@ -139,6 +139,9 @@ export function Hero() {
                 sizes="320px"
                 className="object-cover"
               />
+
+
+              
             </div>
             <motion.div
               className="absolute -right-4 top-8 rounded-xl border border-white/10 bg-card/80 px-3 py-2 text-xs font-mono text-neon-cyan backdrop-blur-md"
