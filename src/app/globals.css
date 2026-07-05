@@ -89,6 +89,52 @@
       radial-gradient(50% 50% at 80% 10%, rgba(168, 85, 247, 0.18), transparent 60%),
       radial-gradient(60% 60% at 70% 80%, rgba(34, 211, 238, 0.14), transparent 60%);
   }
+
+  /* Hero aurora background drift (GPU-friendly: transform only) */
+  @keyframes hero-aurora-1 {
+    0% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(60px, 40px, 0) scale(1.05);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+  }
+  @keyframes hero-aurora-2 {
+    0% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(-70px, 30px, 0) scale(1.08);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+  }
+  @keyframes hero-aurora-3 {
+    0% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(50px, -60px, 0) scale(1.06);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0) scale(1);
+    }
+  }
+
+  .animate-hero-aurora-1 {
+    animation: hero-aurora-1 18s ease-in-out infinite;
+  }
+  .animate-hero-aurora-2 {
+    animation: hero-aurora-2 22s ease-in-out infinite;
+  }
+  .animate-hero-aurora-3 {
+    animation: hero-aurora-3 26s ease-in-out infinite;
+  }
+
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }

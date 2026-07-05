@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { personal } from "@/lib/data";
+import { HeroAuroraBackground } from "./hero-aurora-background";
 
 const HeroScene = dynamic(() => import("@/components/hero-scene"), {
   ssr: false,
@@ -25,10 +26,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-aurora"
     >
-      <div className="absolute inset-0 -z-10 opacity-70">
-        <HeroScene />
-      </div>
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-grid-pattern bg-[size:44px_44px] opacity-30 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
+      <HeroAuroraBackground />
 
       <div className="container grid items-center gap-12 py-28 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="text-center lg:text-left">
